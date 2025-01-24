@@ -8,7 +8,7 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout, Bidirectional, BatchNormalization
 
-#Mapping numeric codes to emotion labels
+#Mapping numeric codes to emotion labels based on RAVDESS naming conventions
 emotion_mapping = {
     "01": "neutral",
     "02": "calm",
