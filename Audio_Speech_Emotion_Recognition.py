@@ -98,7 +98,7 @@ def process_audio_in_segments(audio_path, window_size=2.0, overlap=1.0):
         return np.array([]), []
 
 
-# Building an enhanced RNN model with Bidirectional LSTM
+# Building an RNN model with Bidirectional LSTM
 def build_rnn_model(input_shape, num_classes):
     model = Sequential()
     model.add(Bidirectional(LSTM(128, return_sequences=True), input_shape=input_shape))
